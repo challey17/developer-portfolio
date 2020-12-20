@@ -92,38 +92,6 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url("../img/portrait-mobile.jpg");
-      opacity: 1;
-      width: 150px;
-      height: 150px; } }
-
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; } }
-
 * {
   box-sizing: border-box; }
 
@@ -178,7 +146,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -191,3 +159,107 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bio-img bio bio" "language-icons language-icons language-icons" "bio-2 bio-2 bio-2";
+  grid-template-columns: repeat(3, 1fr); }
+
+.bio-img {
+  grid-area: bio-img;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  background: url(../img/portrait.jpg);
+  border-radius: 50%;
+  border: solid 3px #eece1a; }
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem; }
+
+.language-icons,
+img {
+  flex-wrap: wrap; }
+
+.language-icons {
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10vh;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .language-icons i {
+    padding: 20px; }
+  .language-icons img {
+    background-color: #fff;
+    border-radius: 5px;
+    width: fit-content;
+    width: 63px;
+    height: 72px;
+    border: 1px solid black;
+    color: #fff; }
+
+.bio-2 {
+  grid-area: bio-2;
+  font-size: 1.5rem;
+  padding: 0.5rem; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  height: 60px; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/portrait-mobile.jpg");
+      opacity: 1;
+      width: 150px;
+      height: 150px; }
+  .about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: "bio-img" "bio" "language-icons" "bio-2";
+    grid-template-columns: auto; }
+  .bio,
+  .bio-2 {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; }
+  .language-icons > i {
+    font-size: 3rem; }
+  .language-icons > img {
+    background-color: #fff;
+    border-radius: 5px;
+    width: fit-content;
+    width: 42px;
+    height: 48px;
+    border: 1px solid black;
+    color: #fff;
+    margin: 20px; } }
