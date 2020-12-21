@@ -1,5 +1,25 @@
 // Widescreens
 @include mediaXl {
+  main#about {
+    h2 {
+      padding: 0;
+      font-size: 36px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+  }
+  .about-info {
+    margin-top: 10vh;
+    grid-gap: 60px;
+
+    p {
+      font-size: 36px;
+    }
+  }
+  #main-footer {
+    font-size: 30px;
+  }
 }
 // Desktops, Laptops
 @include mediaLg {
