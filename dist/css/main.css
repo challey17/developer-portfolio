@@ -213,11 +213,25 @@ img {
   color: #fff;
   height: 60px; }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1601px) {
+  main#about h2 {
+    padding: 0;
+    font-size: 38px; }
+  main#about h3 {
+    font-size: 38px; }
+  main#about .about-info {
+    margin-top: 10vh;
+    grid-gap: 60px; }
+    main#about .about-info p {
+      font-size: 38px; }
   main#about .bio-2 p {
-    font-size: 36px; } }
+    font-size: 30px;
+    margin-right: 10%;
+    margin-left: 10%; }
+  #main-footer {
+    font-size: 30px; } }
 
-@media screen and (min-width: 1171px) {
+@media screen and (min-width: 1171px) and (max-width: 1600) {
   main#about h2 {
     padding: 0;
     font-size: 36px; }
@@ -231,7 +245,7 @@ img {
   main#about .bio-2 p {
     font-size: 20px; }
   #main-footer {
-    font-size: 30px; } }
+    font-size: 20px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .bio-2 p {
