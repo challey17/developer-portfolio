@@ -4,8 +4,7 @@
   "description": "dev portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "npm build"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "chayce knaub",
   "license": "ISC",
