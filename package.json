@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "npm run build"
+    "deploy": "npm build"
   },
   "author": "chayce knaub",
   "license": "ISC",
