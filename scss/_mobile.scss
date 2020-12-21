@@ -1,3 +1,14 @@
+//extra large
+@include mediaXxl {
+  main#about {
+    .bio-2 {
+      p {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
 // Widescreens
 @include mediaXl {
   main#about {
@@ -8,21 +19,33 @@
     h3 {
       font-size: 30px;
     }
-  }
-  .about-info {
-    margin-top: 10vh;
-    grid-gap: 60px;
 
-    p {
-      font-size: 36px;
+    .about-info {
+      margin-top: 10vh;
+      grid-gap: 60px;
+
+      p {
+        font-size: 36px;
+      }
+    }
+    .bio-2 {
+      p {
+        font-size: 20px;
+      }
     }
   }
+
   #main-footer {
     font-size: 30px;
   }
 }
 // Desktops, Laptops
 @include mediaLg {
+  .bio-2 {
+    p {
+      font-size: 20px;
+    }
+  }
 }
 // tablets
 @include mediaMd {
