@@ -158,15 +158,25 @@
   .projects-section {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .boxes > div {
+    font-size: 20px;
+  }
 }
 // phones
 @include mediaSm {
-  main#about {
+  main#home {
     padding: 1rem;
     padding-top: 4rem;
   }
+
   main#home h1 {
+    font-size: 76px;
     margin-top: 10vh;
+  }
+  main#about {
+    padding: 1rem;
+    padding-top: 4rem;
   }
 
   .language-icons > i {
@@ -195,5 +205,23 @@
   }
   .projects-section {
     grid-template-columns: 1fr;
+  }
+
+  main#contact {
+    padding: 1rem;
+    padding-top: 4rem;
+
+    h1 {
+      font-size: 76px;
+      margin-top: 5vh;
+    }
+
+    .language-icons > i {
+      font-size: 3rem;
+    }
+
+    .boxes > div {
+      font-size: 16px;
+    }
   }
 }
