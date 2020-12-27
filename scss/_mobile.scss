@@ -26,6 +26,34 @@
     }
   }
 
+  // projects
+
+  main#projects {
+    h2 {
+      padding: 0;
+      font-size: 38px;
+    }
+    h3 {
+      font-size: 38px;
+    }
+
+    .projects-section {
+      margin-top: 10vh;
+      grid-gap: 60px;
+
+      p {
+        font-size: 38px;
+      }
+    }
+
+    .btn {
+      font-size: 20px;
+    }
+  }
+
+  .projects-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
   #main-footer {
     font-size: 30px;
   }
@@ -125,6 +153,11 @@
   .bio-2 {
     font-size: 1rem;
   }
+
+  //projects
+  .projects-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 // phones
 @include mediaSm {
@@ -148,5 +181,19 @@
     border: 1px solid black;
     color: set-text-color($primary-color);
     margin: 20px;
+  }
+
+  // projects
+
+  main#projects {
+    padding: 1rem;
+    padding-top: 4rem;
+  }
+  main#projects h1 {
+    font-size: 76px;
+    margin-top: 5vh;
+  }
+  .projects-section {
+    grid-template-columns: 1fr;
   }
 }
