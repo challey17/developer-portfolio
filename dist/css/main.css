@@ -45,9 +45,22 @@ h3 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 3rem; text-align: center;
+  padding: 3rem;
+  text-align: center;
 }
 
-#main-footer {
-  display: flex;
+
+@media (max-width: 1250px) {
+
+  h1.lg-heading {
+    font-size: 2rem;
+  }
+  .welcome {
+    padding: 0;
+  }
+
+  .welcome img {
+    max-width: unset;
+  }
+  /* … */
 }
